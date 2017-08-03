@@ -1,2 +1,2 @@
-# Road-to-ACM-ICPC
+# Road-to-Informatics-olympiad
 Algorithm+Data structure
