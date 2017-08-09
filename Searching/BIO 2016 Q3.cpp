@@ -19,7 +19,7 @@ struct Status{
 };
 int l;
 bool isPrime[20000000];
-bool used[20000000];
+bool used[20000000];   //this is a lit bit waste of memory, not sure if set can be used
 vector<int> primes;
 void getPrime(int N){
 	memset(isPrime,true,sizeof(isPrime));
@@ -55,7 +55,7 @@ int Bfs(int startNum,int endNum){
 				q.push(Status(Inc,s.steps+1));
 				used[Inc]=1;
 			}
-			int Dec=s.num-(1<<L);
+			int Dec=s.num-(1<<L);				//both increase and decrease should be considered
 			if(Dec>1 && isPrime[Dec] && !used[Dec]){
 				q.push(Status(Dec,s.steps+1));
 				used[Inc]=1;
