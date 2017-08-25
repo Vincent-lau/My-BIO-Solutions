@@ -1,5 +1,5 @@
 //problem source: BIO 2013 Question1: Watching the clock
-//简单题，求(m-n)t+24*60Y=0的解
+//简单题，求(m-n)t+24*60Y=0的解    formula:x=k*x1+t*b/d   (k=c/d)
 //只要求出b/d 即 (24*60)/gcd(m-n,24*60)即可
 #include<iostream>
 #include<cstdio>
